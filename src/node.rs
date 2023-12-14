@@ -25,7 +25,7 @@ impl Tree {
 
 /// An `AST` node.
 #[derive(Clone, Copy)]
-pub struct Node<'a>(OtherNode<'a>);
+pub struct Node<'a>(pub OtherNode<'a>);
 
 impl<'a> Node<'a> {
     /// Checks if a node represents a syntax error or contains any syntax errors
